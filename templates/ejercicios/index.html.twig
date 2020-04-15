@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenidos{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Bienvenidos a los ejercicios en Symfony ✅</h1>
+
+    
+    <ul>
+        <li><a href="{{path('pagina1') }}">Ejercicio 1</a></li>
+        <li><a href="{{path('pagina2') }}">Ejercicio 2</a></li>
+        <li><a href="{{ path('pagina3')}}">Ejercicio 3</a></li>
+        <li><a href="{{ path('pagina3')}}">Ejercicio 4</a></li>
+        
+    </ul>
+</div>
+{% endblock %}
